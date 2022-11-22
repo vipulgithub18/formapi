@@ -5,4 +5,7 @@ from .forms import StudentRegistration
 def ShowFormData(request):
     fm = StudentRegistration()
     return render(request,'enroll/registration.html',{'form':fm})
-    
+
+def home(request):
+    nm = 'vipul patil'
+    return render(request,'enroll/home.html',{'name':nm})
